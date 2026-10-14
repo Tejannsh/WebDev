@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .hero {
+            width: 100%;
+            height: 100vh;
+            background-image: url("Tejansh.jpeg");
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .name-grid {
+            position: absolute;
+            inset: 0;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            padding: 30px;
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px black;
+        }
+
+        .name-grid div:nth-child(2),
+        .name-grid div:nth-child(8) {
+            text-align: center;
+        }
+
+        .name-grid div:nth-child(3),
+        .name-grid div:nth-child(6),
+        .name-grid div:nth-child(9) {
+            text-align: right;
+        }
+
+        .name-grid div:nth-child(4){
+            text-align: left;
+            align-self:  center;
+        }
+        .name-grid div:nth-child(5){
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .name-grid div:nth-child(6) {
+            align-self: center;
+        }
+
+        .name-grid div:nth-child(7),
+        .name-grid div:nth-child(8),
+        .name-grid div:nth-child(9) {
+            align-self: end;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hero">
+        <div class="name-grid">
+            <div>Tejansh Maurya</div>
+            <div>Tejansh Maurya</div>
+            <div>Tejansh Maurya</div>
+
+            <div>Tejansh Maurya</div>
+            <div>Tejansh Maurya</div>
+            <div>Tejansh Maurya</div>
+
+            <div>Tejansh Maurya</div>
+            <div>Tejansh Maurya</div>
+            <div>Tejansh Maurya</div>
+        </div>
+    </div>
+</body>
+</html>
